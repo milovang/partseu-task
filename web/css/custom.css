@@ -1,0 +1,84 @@
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+.form-control-borderless {
+  border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+img.card-img-top {
+  max-height: 450px;
+  height: 450px;
+}
+
+.card-body .card-link {
+  font-weight: 600;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 7px 8px;
+  margin: 2px auto;
+}
+
+.link-atv {
+  background: rgb(246,208,28);
+}
+.link-v-twin {
+  background: rgb(19, 93, 169);
+}
+.link-offroad{
+  background: rgb(85,162,64);
+}
+.link-snow {
+  background: rgb(140,39,126);
+}
+.link-street {
+  background: rgb(222,58,85);
+}
+.link-watercraft {
+  background: rgb(38,137,187);
+}
+
+a#resetFilter {
+  color: #fff;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}

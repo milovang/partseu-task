@@ -1,0 +1,15 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+byCategory:
+    path: /category/{id}
+    controller: AppBundle\Controller\CatalogController::getByCategory
+
+filterByCategories:
+    path: /categories
+    controller: AppBundle\Controller\CatalogController::getByCategories
+
+byName:
+    path: /search
+    controller: AppBundle\Controller\CatalogController::searchByName
