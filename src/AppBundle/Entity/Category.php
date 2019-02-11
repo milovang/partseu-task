@@ -22,7 +22,7 @@ class Category
     private $name;
 
     /**
-     * Many Groups have Many Users.
+     * Many Categories have Many Catalogs.
      * @ORM\ManyToMany(targetEntity="Catalog", mappedBy="categories")
      */
     protected $catalogs;

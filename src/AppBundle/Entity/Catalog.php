@@ -27,7 +27,7 @@ class Catalog
     private $image;
 
     /**
-     * Many Users have Many Groups.
+     * Many Catalogs have Many Categories.
      * @ORM\ManyToMany(targetEntity="Category", inversedBy="catalogs")
      * @ORM\JoinTable(name="catalogs_categories")
      */
