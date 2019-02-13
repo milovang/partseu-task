@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Request;
 class CatalogController extends Controller
 {
 
-    public function getByCategory($id, Request $request){
+    public function getByCategory($id){
 
         $category = $this->getDoctrine()->getRepository(Category::class)->findOneBy([ "id" => $id ]);
         $catalogs = $category->getCatalogs();
